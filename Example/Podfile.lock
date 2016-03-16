@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (3.2.1)
+  - BrickRequest (0.1.0):
+    - Alamofire (~> 3.2.0)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - BrickRequest (from `../`)
+  - Nimble (= 3.0.0)
+  - Quick (~> 0.8.0)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  BrickRequest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  BrickRequest: 45d4be17bb5d0fd0e7ee533c13911421bd64029a
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
