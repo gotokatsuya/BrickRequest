@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
 
 <center>
-![](icon.png)
+<img src="icon.png">
 </center>
 
 ## Usage
