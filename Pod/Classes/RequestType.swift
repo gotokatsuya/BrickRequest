@@ -44,9 +44,7 @@ extension RequestType where Self: Component, Self: ResponseType {
     
     func createRequest(component: Component) throws -> Alamofire.Request {
         
-        // アップロードかデータかを判別する的な
-        // バックグラウンドで保存を検討する
-        
+        // TODO: Background save to disk.
         switch self.method {
         case .GET, .DELETE:
             
