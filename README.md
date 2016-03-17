@@ -5,7 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
 [![Platform](https://img.shields.io/cocoapods/p/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
 
+<center>
 ![](icon.png)
+</center>
 
 ## Usage
 
