@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
 [![Platform](https://img.shields.io/cocoapods/p/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
 
+![](icon.png)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
