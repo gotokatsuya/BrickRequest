@@ -56,6 +56,8 @@ request.response { response in
 request.resume()
 ```
 
+## Architecture
+
 `GetUser` conform to many protocols. Each of them are like Bricks, and you implement them like this:
 
 Define a Brick that will set the request type as `GET`.
