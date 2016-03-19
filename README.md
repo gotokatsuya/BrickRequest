@@ -56,7 +56,7 @@ request.response { response in
 request.resume()
 ```
 
-## Architecture
+## Sample Protocols
 
 `GetUser` conform to many protocols. Each of them are like Bricks, and you implement them like this:
 
@@ -128,7 +128,8 @@ extension JSONResponseType {
 }
 ```
 
-## Structure
+## Architecture
+
 - `Session` manages requests.
 
 ```swift
