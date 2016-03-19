@@ -62,7 +62,7 @@ public struct ParameterBuilder {
         return multipart
     }
 
-    public func createParameter() throws -> [String : AnyObject] {
+    public func createParameter() -> [String : AnyObject] {
         
         var parameters: [String : AnyObject] = [ : ]
         

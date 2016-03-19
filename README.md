@@ -1,29 +1,21 @@
 # BrickRequest
-
-[![CI Status](http://img.shields.io/travis/muukii/BrickRequest.svg?style=flat)](https://travis-ci.org/muukii/BrickRequest)
-[![Version](https://img.shields.io/cocoapods/v/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
-[![License](https://img.shields.io/cocoapods/l/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
-[![Platform](https://img.shields.io/cocoapods/p/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
-
+[![CI Status](http://img.shields.io/travis/muukii/BrickRequest.svg?style=flat)](https://travis-ci.org/muukii/BrickRequest) [![Version](https://img.shields.io/cocoapods/v/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest) [![License](https://img.shields.io/cocoapods/l/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest) [![Platform](https://img.shields.io/cocoapods/p/BrickRequest.svg?style=flat)](http://cocoapods.org/pods/BrickRequest)
 <center>
 <img src="icon.png">
 </center>
 
 - This is still in development, so there may be lacking functionality, and API may change.
-
 - BrickRequest is a helper library for Alamofire.
 - You can improve readability and DRYness when working with Alamofire.
 - BrickRequest provides several protocols.
-  By using protocol extensions, you can build requests, just like building with LEGO bricks.
+- By using protocol extensions, you can build requests, just like building with LEGO bricks.
 - You can understand what the request does just by seeing the class signature.
 - Auto-retry ability is provided using `Reachability`
 
 ## Requirements
-
 iOS8.0 +, Swift2.2
 
 ## Usage example
-
 For example, a request that retrieves an User is built like this:
 
 ```swift
@@ -46,8 +38,25 @@ class GetUser: Component, GETRequestType, APISessionRequestType, SoftAutoRetryTy
 }
 ```
 
-`GetUser` conform to many protocols. Each of them are like Bricks, and you implement them like this:
+Dispatch...
 
+```swift
+
+let request = GetUser(userID: 100)
+
+request.response { response in
+    switch response.result {
+      case .Success(let json):
+          break
+      case .Failure(let error):
+          break
+    }  
+}
+
+request.resume()
+```
+
+`GetUser` conform to many protocols. Each of them are like Bricks, and you implement them like this:
 
 Define a Brick that will set the request type as `GET`.
 
@@ -118,7 +127,6 @@ extension JSONResponseType {
 ```
 
 ## Structure
-
 - `Session` manages requests.
 
 ```swift
@@ -183,18 +191,14 @@ public protocol ResponseType {
 ```
 
 ## Installation
-
-BrickRequest is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+BrickRequest is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "BrickRequest"
 ```
 
 ## Author
-
 muukii, m@muukii.me
 
 ## License
-
 BrickRequest is available under the MIT license. See the LICENSE file for more info.

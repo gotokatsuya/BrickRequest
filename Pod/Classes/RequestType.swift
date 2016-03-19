@@ -42,20 +42,20 @@ extension RequestType where Self: Component, Self: ResponseType {
         self.session.dispatchCancel(self)
     }
     
-    func createRequest(component: Component) throws -> Alamofire.Request {
+    func createRequest(component: Component) -> Alamofire.Request {
         
         // TODO: Background save to disk.
         switch self.method {
         case .GET, .DELETE:
             
-            let params = try component.parameterBuilder.createParameter()
+            let params = component.parameterBuilder.createParameter()
             return self.session.manager.request(self.method, self.URLString, parameters: params)                    
     
         case .PUT, .POST:
             
-            try NSFileManager.defaultManager().createDirectoryAtPath(self.session.saveBodyPath, withIntermediateDirectories: true, attributes: nil)
+            try! NSFileManager.defaultManager().createDirectoryAtPath(self.session.saveBodyPath, withIntermediateDirectories: true, attributes: nil)
             let bodyDataFileURL = NSURL(fileURLWithPath: self.session.saveBodyPath + NSUUID().UUIDString)
-            try self.parameterBuilder.createMultipartFormData().writeEncodedDataToDisk(bodyDataFileURL)
+            try! self.parameterBuilder.createMultipartFormData().writeEncodedDataToDisk(bodyDataFileURL)
             return self.session.manager.upload(self.method, self.URLString, file: bodyDataFileURL)
         default:
             preconditionFailure("Does not supported")

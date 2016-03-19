@@ -33,9 +33,9 @@ public protocol ResponseType {
 
 extension ResponseType where Self: Component, Self: RequestType {
     
-    public func response(responseBlock: Alamofire.Response<SerializedObject, ResponseError> -> Void) throws {
+    public func response(responseBlock: Alamofire.Response<SerializedObject, ResponseError> -> Void) {
         
-        let request = try self.createRequest(self)
+        let request = self.createRequest(self)
         request.response(responseSerializer: self.responseSerializer) { (response) -> Void in
             switch response.result {
             case .Success:
@@ -47,12 +47,8 @@ extension ResponseType where Self: Component, Self: RequestType {
                     let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(self.autoRetryConfiguration.breakTime * Double(NSEC_PER_SEC)))
                     dispatch_after(delayTime, dispatch_get_main_queue()) {
                         self.increseRetryCount()
-                        do {
-                            try self.response(responseBlock)
-                            self.resume()
-                        } catch {
-                            
-                        }
+                        self.response(responseBlock)
+                        self.resume()
                     }
                 } else {
                     responseBlock(response)
