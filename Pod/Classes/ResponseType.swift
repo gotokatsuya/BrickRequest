@@ -25,8 +25,8 @@ import Alamofire
 
 public protocol ResponseType {
     
-    associatedtype SerializedObject
-    associatedtype ResponseError: ErrorType
+    typealias SerializedObject
+    typealias ResponseError: ErrorType
     
     var responseSerializer: Alamofire.ResponseSerializer<SerializedObject, ResponseError> { get }
 }
