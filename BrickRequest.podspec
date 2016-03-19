@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BrickRequest"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "BrickRequest is a helper library for Alamofire"
 
 # This description is used to generate tags and improve search results.
