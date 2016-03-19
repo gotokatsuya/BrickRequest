@@ -9,14 +9,15 @@
 <img src="icon.png">
 </center>
 
-- まだ開発段階なので、足りていない機能や、APIに変更があるかもしれません。
+- This is still in development, so there may be lacking functionality, and API may change.
 
-- BrickRequestはAlamofireのヘルパーライブラリです。
-- Alamofireを利用しつつ、APIリクエストのコードの可読性をupし、共通のコードをまとめることが出来るようになります。
-- BrickRequestではいくつかのプロトコルを用意しています。
-protocol extensionを利用することで一つのリクエストをまるでLEGOブロックを組み立てるかのように簡単に定義・共通化が出来るようになります。
-- クラスの定義を見るだけで、どのようなリクエストなのかを知ることも出来ます。
-- Reachablityを利用した自動リトライ機能があります。
+- BrickRequest is a helper library for Alamofire.
+- You can improve readability and DRYness when working with Alamofire.
+- BrickRequest provides several protocols.
+  By using protocol extensions, you can build requests, just like building with LEGO bricks.
+- You can understand what the request does just by seeing the class signature.
+- Auto-retry ability is provided using `Reachability`
+
 
 
 ## Requirements
@@ -25,7 +26,7 @@ iOS8.0 +, Swift2.2
 
 ## Usage example
 
-例えばユーザーを取得するAPIは以下のように組み立てることが出来ます。
+For example, a request that retrieves an User is built like this:
 
 ```swift
 class GetUser: Component, GETRequestType, APISessionRequestType, SoftAutoRetryType, JSONResponseType {
@@ -47,10 +48,10 @@ class GetUser: Component, GETRequestType, APISessionRequestType, SoftAutoRetryTy
 }
 ```
 
-GetUserクラスには多くのプロトコルが採用されていますが、
-それぞれのプロトコルをBrickと例えて、以下のように定義しておきます。
+`GetUser` conform to many protocols. Each of them are like Bricks, and you implement them like this:
 
-GETリクエストを行うBrickを定義
+
+Define a Brick that will set the request type as `GET`.
 
 ```swift
 protocol GETRequestType: RequestType {}
@@ -62,7 +63,7 @@ extension GETRequestType {
 }
 ```
 
-リクエストを行うSessionを指定するBrickを定義
+Define a Brick that will set the `Session` to be used in a request.
 
 ```swift
 protocol APISessionRequestType: RequestType {}
@@ -75,7 +76,8 @@ extension APISessionRequestType {
 }
 ```
 
-自動リトライは３回まで行うBrickを定義
+Define a Brick that will configure auto-retry to be run up to 3 times.
+
 ```swift
 protocol SoftAutoRetryType: RequestType {}
 
@@ -86,7 +88,8 @@ extension SoftAutoRetryType {
 }
 ```
 
-レスポンスはSwiftyJSONのJSONに変換するBrickを定義
+Define a Brick that will convert responses to SwityJSON JSON objects.
+
 ```swift
 extension JSONResponseType {
 
@@ -112,7 +115,7 @@ extension JSONResponseType {
 
 ## Structure
 
-- Sessionはリクエストを管理します。
+- `Session` manages requests.
 
 ```swift
 public class Session {
@@ -120,7 +123,7 @@ public class Session {
     public init(manager: Alamofire.Manager, reachablityManager: Alamofire.NetworkReachabilityManager?)
 ```
 
-- Componentはリクエストを作成するため (Component -> RequestContextにリネームするかも)
+- `Component` is used for creating requests (maybe renamed to RequestContext).
 
 ```swift
 public class Component: Hashable {
@@ -128,8 +131,7 @@ public class Component: Hashable {
 }
 ```
 
-リクエストを実行するためには
-Componentクラスを継承し、以下の２つのプロトコルを実装する必要があります。
+To send a request, you need to extend `Component` and conform to the following 2 protocols.
 
 ```swift
 public protocol RequestType {
