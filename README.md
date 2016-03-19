@@ -18,8 +18,6 @@
 - You can understand what the request does just by seeing the class signature.
 - Auto-retry ability is provided using `Reachability`
 
-
-
 ## Requirements
 
 iOS8.0 +, Swift2.2
@@ -57,7 +55,9 @@ Define a Brick that will set the request type as `GET`.
 protocol GETRequestType: RequestType {}
 
 extension GETRequestType {
+
     var method: Alamofire.Method {
+
         return .GET
     }
 }
@@ -71,6 +71,7 @@ protocol APISessionRequestType: RequestType {}
 extension APISessionRequestType {
 
     var session: Session {
+
         return SessionStack.APIBackgroundSession
     }
 }
@@ -82,7 +83,9 @@ Define a Brick that will configure auto-retry to be run up to 3 times.
 protocol SoftAutoRetryType: RequestType {}
 
 extension SoftAutoRetryType {
+
     var autoRetryConfiguration: Component.AutoRetryConfiguration {
+
         return Component.AutoRetryConfiguration(maxRetryCount: 3)
     }
 }
@@ -94,6 +97,7 @@ Define a Brick that will convert responses to SwityJSON JSON objects.
 extension JSONResponseType {
 
     var responseSerializer: Alamofire.ResponseSerializer<JSON, AppRequestError> {
+
         return ResponseSerializer<SwiftyJSON.JSON, AppRequestError> { request, response, data, error in
 
             guard let data = data where error == nil else {
@@ -128,6 +132,30 @@ public class Session {
 ```swift
 public class Component: Hashable {
 
+    public let parameterBuilder: ParameterBuilder
+
+    public init(parameterBuilder: ParameterBuilder) {
+        self.parameterBuilder = parameterBuilder
+    }
+}
+```
+
+```swift
+public struct Component.AutoRetryConfiguration {
+
+    public var breakTime: NSTimeInterval
+    public var maxRetryCount: Int
+    // TODO: public var enableBackgroundRetry: Bool
+    // TODO: public var failWhenNotReachable: Bool
+
+    public init(breakTime: NSTimeInterval = 5,
+                maxRetryCount: Int = 5,
+                enableBackgroundRetry: Bool = true,
+                failWhenNotReachable: Bool = false) {
+
+        self.breakTime = breakTime
+        self.maxRetryCount = maxRetryCount
+    }
 }
 ```
 
