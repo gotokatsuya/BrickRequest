@@ -32,8 +32,8 @@ public protocol RequestType {
 
 public protocol ResponseType {
     
-    typealias SerializedObject
-    typealias ResponseError: ErrorType
+    associatedtype SerializedObject
+    associatedtype ResponseError: ErrorType
     
     var responseSerializer: Alamofire.ResponseSerializer<SerializedObject, ResponseError> { get }
 }
