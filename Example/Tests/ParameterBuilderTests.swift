@@ -23,10 +23,9 @@
 import Foundation
 import Quick
 import Nimble
-@testable import EasyRequest
+@testable import BrickRequest
 
-
-class ParameterBuilder: QuickSpec {
+class ParameterBuilderSpec: QuickSpec {
     
     override func spec() {
         describe("Check convert value for HTTP Reqest") {

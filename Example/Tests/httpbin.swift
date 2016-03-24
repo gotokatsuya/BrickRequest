@@ -21,9 +21,10 @@
 // THE SOFTWARE.
 
 import Foundation
-@testable import EasyRequest
 import Alamofire
 import SwiftyJSON
+
+@testable import BrickRequest
 
 protocol SharedSessionRequestType: RequestType {}
 protocol JSONResponseType: ResponseType {}
