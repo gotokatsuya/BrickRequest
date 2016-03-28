@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BrickRequest"
-  s.version          = "0.2.1"
+  s.version          = "0.3.0"
   s.summary          = "BrickRequest is a helper library for Alamofire"
 
 # This description is used to generate tags and improve search results.
@@ -42,5 +42,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Alamofire', '~> 3.2.0'
+  s.dependency 'Alamofire', '~> 3.3.0'
 end
