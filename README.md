@@ -4,13 +4,8 @@
 <img src="icon.png">
 </center>
 
-- This is still in development, so there may be lacking functionality, and API may change.
-- BrickRequest is a helper library for Alamofire.
-- You can improve readability and DRYness when working with Alamofire.
-- BrickRequest provides several protocols.
-- By using protocol extensions, you can build requests, just like building with LEGO bricks.
-- You can understand what the request does just by seeing the class signature.
-- Auto-retry ability is provided using `Reachability`
+
+**Abstruct Framewrok of Request**
 
 ## Requirements
 iOS8.0 +, Swift2.2
