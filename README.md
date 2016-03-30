@@ -10,175 +10,48 @@
 ## Requirements
 iOS8.0 +, Swift2.2
 
-## Usage example
-For example, a request that retrieves an User is built like this:
+## Whats is *Brick*?
 
-```swift
-class GetUser: Component, GETRequestType, APISessionRequestType, SoftAutoRetryType, JSONResponseType {
+BrickRequest provides protocol only.
 
-    let userID: String
+You need implement this protocols.
+Then API request will be clean.
 
-    var URLString: String {
-        return "https://httpbin.org/get"
-    }
+- RequestContextType
+- RequestType
+- ResponseType
 
-    init(userID: String) {
-        self.userID = userID        
-
-        var parameter = ParameterBuilder()
-        parameter.add(TextParameter(value: userID, name: "userID"))
-
-        super.init(parameterBuilder: parameter)
-    }
-}
 ```
-
-Dispatch...
-
-```swift
-
-let request = GetUser(userID: 100)
-
-request.response { response in
-    switch response.result {
-      case .Success(let json):
-          break
-      case .Failure(let error):
-          break
-    }  
+let request = RequestContextType.create { response in
+    // Response process
 }
 
 request.resume()
 ```
 
-## Sample Protocols
+```
+public protocol RequestContextType {
 
-`GetUser` conform to many protocols. Each of them are like Bricks, and you implement them like this:
+}
 
-Define a Brick that will set the request type as `GET`.
+extension RequestContextType where Self: ResponseType, Self: RequestType {
 
-```swift
-protocol GETRequestType: RequestType {}
+    public func create(block: Alamofire.Response<SerializedObject, ResponseError> -> Void) -> Alamofire.Request {
 
-extension GETRequestType {
-
-    var method: Alamofire.Method {
-
-        return .GET
+        let request = self.createRequest(method: self.method, URLString: self.URLString, manager: self.manager)
+        request.response(responseSerializer: self.responseSerializer, completionHandler: block)
+        return request
     }
 }
-```
 
-Define a Brick that will set the `Session` to be used in a request.
-
-```swift
-protocol APISessionRequestType: RequestType {}
-
-extension APISessionRequestType {
-
-    var session: Session {
-
-        return SessionStack.APIBackgroundSession
-    }
-}
-```
-
-Define a Brick that will configure auto-retry to be run up to 3 times.
-
-```swift
-protocol SoftAutoRetryType: RequestType {}
-
-extension SoftAutoRetryType {
-
-    var autoRetryConfiguration: Component.AutoRetryConfiguration {
-
-        return Component.AutoRetryConfiguration(maxRetryCount: 3)
-    }
-}
-```
-
-Define a Brick that will convert responses to SwityJSON JSON objects.
-
-```swift
-extension JSONResponseType {
-
-    var responseSerializer: Alamofire.ResponseSerializer<JSON, AppRequestError> {
-
-        return ResponseSerializer<SwiftyJSON.JSON, AppRequestError> { request, response, data, error in
-
-            guard let data = data where error == nil else {
-
-                return .Failure(AppRequestError.UnknownError)
-            }
-
-            let json = JSON(data: data)
-            guard json != JSON.null else {
-
-                return .Failure(AppRequestError.UnknownError)
-            }
-
-            return .Success(json)
-        }
-    }
-}
-```
-
-## Architecture
-
-- `Session` manages requests.
-
-```swift
-public class Session {
-
-    public init(manager: Alamofire.Manager, reachablityManager: Alamofire.NetworkReachabilityManager?)
-```
-
-- `Component` is used for creating requests (maybe renamed to RequestContext).
-
-```swift
-public class Component: Hashable {
-
-    public let parameterBuilder: ParameterBuilder
-
-    public init(parameterBuilder: ParameterBuilder) {
-        self.parameterBuilder = parameterBuilder
-    }
-}
-```
-
-```swift
-public struct Component.AutoRetryConfiguration {
-
-    public var breakTime: NSTimeInterval
-    public var maxRetryCount: Int
-    // TODO: public var enableBackgroundRetry: Bool
-    // TODO: public var failWhenNotReachable: Bool
-
-    public init(breakTime: NSTimeInterval = 5,
-                maxRetryCount: Int = 5,
-                enableBackgroundRetry: Bool = true,
-                failWhenNotReachable: Bool = false) {
-
-        self.breakTime = breakTime
-        self.maxRetryCount = maxRetryCount
-    }
-}
-```
-
-To send a request, you need to extend `Component` and conform to the following 2 protocols.
-
-```swift
 public protocol RequestType {
 
     var method: Alamofire.Method { get }
     var URLString: String { get }
-
-    var session: Session { get }
-    var autoRetryConfiguration: Component.AutoRetryConfiguration { get }
+    var manager: Alamofire.Manager { get }
+    func createRequest(method method: Alamofire.Method, URLString: String, manager: Alamofire.Manager) -> Alamofire.Request
 }
-```
 
-```swift
 public protocol ResponseType {
 
     associatedtype SerializedObject
