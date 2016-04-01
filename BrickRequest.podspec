@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.source_files = 'BrickRequest/**/*.swift'
+  s.source_files = 'BrickRequest/*.swift'
   s.resource_bundles = {
     'BrickRequest' => ['Pod/Assets/*.png']
   }
