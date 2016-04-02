@@ -10,7 +10,7 @@
 ## Requirements
 iOS8.0 +, Swift2.2
 
-## Whats is *Brick*?
+## What's *Brick*?
 
 BrickRequest provides protocol only.
 
