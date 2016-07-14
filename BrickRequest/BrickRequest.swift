@@ -30,7 +30,8 @@ public protocol RequestContextType {
 extension RequestContextType where Self: ResponseType, Self: RequestType {
 
     public func create(block: Alamofire.Response<SerializedObject, ResponseError> -> Void) -> Alamofire.Request {
-
+        
+        self.manager.startRequestsImmediately = false
         let request = self.createRequest(method: self.method, URLString: self.URLString, manager: self.manager)
         request.response(responseSerializer: self.responseSerializer, completionHandler: block)
         return request
