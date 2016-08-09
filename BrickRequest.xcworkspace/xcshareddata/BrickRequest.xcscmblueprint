@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A1FBCEFECE1F1D3D98B73E9387C5F1948C78D54E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5DE0842323FCFCC132D56439123C27EEBA748845" : 9223372036854775807,
+    "A1FBCEFECE1F1D3D98B73E9387C5F1948C78D54E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6A8A23C2-B04E-4728-830C-C527DAEEC1A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5DE0842323FCFCC132D56439123C27EEBA748845" : "..",
+    "A1FBCEFECE1F1D3D98B73E9387C5F1948C78D54E" : "BrickRequest\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BrickRequest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BrickRequest.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:muukii\/pairs-global-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5DE0842323FCFCC132D56439123C27EEBA748845"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:muukii\/BrickRequest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1FBCEFECE1F1D3D98B73E9387C5F1948C78D54E"
+    }
+  ]
+}

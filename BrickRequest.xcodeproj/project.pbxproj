@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10B571E1C186266DAC5CED3C /* Pods_BrickRequest_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8267C8893EF2C214E6F6AB75 /* Pods_BrickRequest_OSX.framework */; };
+		3041CF52D204837695EDB48F /* Pods_BrickRequest_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F62DAB12CAE77C8C12BBC9 /* Pods_BrickRequest_iOS.framework */; };
 		4BD3A6E01CAEBF4700627E5D /* BrickRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BD3A6EB1CAEBF7300627E5D /* BrickRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BD3A6F61CAEBF7600627E5D /* BrickRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,17 +16,18 @@
 		4BD3A70B1CAEC12F00627E5D /* BrickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */; };
 		4BD3A70C1CAEC12F00627E5D /* BrickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */; };
 		4BD3A70D1CAEC12F00627E5D /* BrickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */; };
-		583D3A2BA1949A7ABB0BA012 /* Pods_BrickRequest_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA97E2D9F9C3098544367D /* Pods_BrickRequest_iOS.framework */; };
-		AE7AC00DC3803EE43A44DB36 /* Pods_BrickRequest_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A239303195A8BA9AF423585D /* Pods_BrickRequest_watchOS.framework */; };
-		DD18FF94862609A895BBF2A3 /* Pods_BrickRequest_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD9133EA7C0176EBF27D532 /* Pods_BrickRequest_tvOS.framework */; };
+		BC5A7F36F1C40083AC91F7EF /* Pods_BrickRequest_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368B6229A22D480FAD443FF6 /* Pods_BrickRequest_watchOS.framework */; };
+		C0AE0009A862281ADB6ACFC8 /* Pods_BrickRequest_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF9EF1B59FEB702475924C /* Pods_BrickRequest_tvOS.framework */; };
+		C353E433A81C5CE141037240 /* Pods_BrickRequest_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB5417BCFC816F75FB07520 /* Pods_BrickRequest_OSX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19DA97E2D9F9C3098544367D /* Pods_BrickRequest_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DD9133EA7C0176EBF27D532 /* Pods_BrickRequest_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2701BEED53CE80836FDD59D4 /* Pods-BrickRequest iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS.release.xcconfig"; sourceTree = "<group>"; };
-		2CBD487A2D0467DCA53E424B /* Pods-BrickRequest watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		454E4423425EBF3927B0AD6F /* Pods-BrickRequest iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		08F62DAB12CAE77C8C12BBC9 /* Pods_BrickRequest_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		368B6229A22D480FAD443FF6 /* Pods_BrickRequest_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E6CBD025CC2A274312BE83 /* Pods-BrickRequest OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		38AF38C137AF0B9CA4544360 /* Pods-BrickRequest watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		4003D676B839416E5A19BD72 /* Pods-BrickRequest tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		40151AAF06E2BE6898F213AE /* Pods-BrickRequest iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS.release.xcconfig"; sourceTree = "<group>"; };
 		4BD3A6DC1CAEBF4700627E5D /* BrickRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrickRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrickRequest.h; sourceTree = "<group>"; };
 		4BD3A6E11CAEBF4700627E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,13 +35,12 @@
 		4BD3A6FB1CAEBF7600627E5D /* BrickRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrickRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3A7061CAEBF7600627E5D /* BrickRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrickRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickRequest.swift; sourceTree = "<group>"; };
-		6B09C8281DABA57F8B5A5854 /* Pods-BrickRequest OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX.debug.xcconfig"; sourceTree = "<group>"; };
-		8267C8893EF2C214E6F6AB75 /* Pods_BrickRequest_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B45745EC1AF28715738087F /* Pods-BrickRequest tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		90B3E1D8624B627C754E7D48 /* Pods-BrickRequest tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		A239303195A8BA9AF423585D /* Pods_BrickRequest_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A72F1310520ED5B65014E91C /* Pods-BrickRequest watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C4DB0CF09D5AFE7415B074E0 /* Pods-BrickRequest OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX.release.xcconfig"; sourceTree = "<group>"; };
+		62CF9EF1B59FEB702475924C /* Pods_BrickRequest_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		666AE4926A1A5715F096DA1A /* Pods-BrickRequest watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		701B7A15F49BD4F558548685 /* Pods-BrickRequest iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9A8C80838EABDC69446DD14F /* Pods-BrickRequest tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AAB5417BCFC816F75FB07520 /* Pods_BrickRequest_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1384EE8FB3CEB846F65DD1 /* Pods-BrickRequest OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				583D3A2BA1949A7ABB0BA012 /* Pods_BrickRequest_iOS.framework in Frameworks */,
+				3041CF52D204837695EDB48F /* Pods_BrickRequest_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B571E1C186266DAC5CED3C /* Pods_BrickRequest_OSX.framework in Frameworks */,
+				C353E433A81C5CE141037240 /* Pods_BrickRequest_OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7AC00DC3803EE43A44DB36 /* Pods_BrickRequest_watchOS.framework in Frameworks */,
+				BC5A7F36F1C40083AC91F7EF /* Pods_BrickRequest_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,20 +72,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD18FF94862609A895BBF2A3 /* Pods_BrickRequest_tvOS.framework in Frameworks */,
+				C0AE0009A862281ADB6ACFC8 /* Pods_BrickRequest_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		369741EF0313C5A2021D18AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37E6CBD025CC2A274312BE83 /* Pods-BrickRequest OSX.debug.xcconfig */,
+				AE1384EE8FB3CEB846F65DD1 /* Pods-BrickRequest OSX.release.xcconfig */,
+				701B7A15F49BD4F558548685 /* Pods-BrickRequest iOS.debug.xcconfig */,
+				40151AAF06E2BE6898F213AE /* Pods-BrickRequest iOS.release.xcconfig */,
+				9A8C80838EABDC69446DD14F /* Pods-BrickRequest tvOS.debug.xcconfig */,
+				4003D676B839416E5A19BD72 /* Pods-BrickRequest tvOS.release.xcconfig */,
+				666AE4926A1A5715F096DA1A /* Pods-BrickRequest watchOS.debug.xcconfig */,
+				38AF38C137AF0B9CA4544360 /* Pods-BrickRequest watchOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4BD3A6D21CAEBF4700627E5D = {
 			isa = PBXGroup;
 			children = (
 				4BD3A6DE1CAEBF4700627E5D /* BrickRequest */,
 				4BD3A6DD1CAEBF4700627E5D /* Products */,
-				9B13D62A1F4790AC4BE72C81 /* Pods */,
-				59F51B5601C02CB5D0FE52AD /* Frameworks */,
+				369741EF0313C5A2021D18AA /* Pods */,
+				E35980FA961A0C1138AC5A23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,30 +125,15 @@
 			path = BrickRequest;
 			sourceTree = "<group>";
 		};
-		59F51B5601C02CB5D0FE52AD /* Frameworks */ = {
+		E35980FA961A0C1138AC5A23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8267C8893EF2C214E6F6AB75 /* Pods_BrickRequest_OSX.framework */,
-				19DA97E2D9F9C3098544367D /* Pods_BrickRequest_iOS.framework */,
-				1DD9133EA7C0176EBF27D532 /* Pods_BrickRequest_tvOS.framework */,
-				A239303195A8BA9AF423585D /* Pods_BrickRequest_watchOS.framework */,
+				AAB5417BCFC816F75FB07520 /* Pods_BrickRequest_OSX.framework */,
+				08F62DAB12CAE77C8C12BBC9 /* Pods_BrickRequest_iOS.framework */,
+				62CF9EF1B59FEB702475924C /* Pods_BrickRequest_tvOS.framework */,
+				368B6229A22D480FAD443FF6 /* Pods_BrickRequest_watchOS.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9B13D62A1F4790AC4BE72C81 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6B09C8281DABA57F8B5A5854 /* Pods-BrickRequest OSX.debug.xcconfig */,
-				C4DB0CF09D5AFE7415B074E0 /* Pods-BrickRequest OSX.release.xcconfig */,
-				454E4423425EBF3927B0AD6F /* Pods-BrickRequest iOS.debug.xcconfig */,
-				2701BEED53CE80836FDD59D4 /* Pods-BrickRequest iOS.release.xcconfig */,
-				90B3E1D8624B627C754E7D48 /* Pods-BrickRequest tvOS.debug.xcconfig */,
-				8B45745EC1AF28715738087F /* Pods-BrickRequest tvOS.release.xcconfig */,
-				A72F1310520ED5B65014E91C /* Pods-BrickRequest watchOS.debug.xcconfig */,
-				2CBD487A2D0467DCA53E424B /* Pods-BrickRequest watchOS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,12 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A6E41CAEBF4700627E5D /* Build configuration list for PBXNativeTarget "BrickRequest iOS" */;
 			buildPhases = (
-				B227699F7236E194C3305B63 /* Check Pods Manifest.lock */,
+				3F68EA0CF8C146586DF6FA24 /* [CP] Check Pods Manifest.lock */,
 				4BD3A6D71CAEBF4700627E5D /* Sources */,
 				4BD3A6D81CAEBF4700627E5D /* Frameworks */,
 				4BD3A6D91CAEBF4700627E5D /* Headers */,
 				4BD3A6DA1CAEBF4700627E5D /* Resources */,
-				F75B29D99203FC74561FC338 /* Copy Pods Resources */,
+				51BEB421F664A7ACE8312280 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,12 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A6ED1CAEBF7300627E5D /* Build configuration list for PBXNativeTarget "BrickRequest OSX" */;
 			buildPhases = (
-				8F148F4EBE25B6D57EC12462 /* Check Pods Manifest.lock */,
+				A52AE609EEE74DB30A57B9B4 /* [CP] Check Pods Manifest.lock */,
 				4BD3A6E81CAEBF7300627E5D /* Sources */,
 				4BD3A6E91CAEBF7300627E5D /* Frameworks */,
 				4BD3A6EA1CAEBF7300627E5D /* Headers */,
 				4BD3A6EC1CAEBF7300627E5D /* Resources */,
-				61C7318035ECFF3D2F6876E3 /* Copy Pods Resources */,
+				8AF10971F79DA76CC95614AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,12 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A6F81CAEBF7600627E5D /* Build configuration list for PBXNativeTarget "BrickRequest watchOS" */;
 			buildPhases = (
-				E315639F37D4BAF216C52E42 /* Check Pods Manifest.lock */,
+				588298870B5076F7F9781194 /* [CP] Check Pods Manifest.lock */,
 				4BD3A6F31CAEBF7600627E5D /* Sources */,
 				4BD3A6F41CAEBF7600627E5D /* Frameworks */,
 				4BD3A6F51CAEBF7600627E5D /* Headers */,
 				4BD3A6F71CAEBF7600627E5D /* Resources */,
-				B39E3C141ECD32A2B599674D /* Copy Pods Resources */,
+				9B0A2DB38ABD151480C7C259 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,12 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A7031CAEBF7600627E5D /* Build configuration list for PBXNativeTarget "BrickRequest tvOS" */;
 			buildPhases = (
-				D4C5424B18A40E30D9B3B957 /* Check Pods Manifest.lock */,
+				F809CC432273F01C2F35E8AD /* [CP] Check Pods Manifest.lock */,
 				4BD3A6FE1CAEBF7600627E5D /* Sources */,
 				4BD3A6FF1CAEBF7600627E5D /* Frameworks */,
 				4BD3A7001CAEBF7600627E5D /* Headers */,
 				4BD3A7021CAEBF7600627E5D /* Resources */,
-				806388FF2F21A3381587CEE4 /* Copy Pods Resources */,
+				1E3A69141FF24FB7FCF9A0B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +265,7 @@
 				TargetAttributes = {
 					4BD3A6DB1CAEBF4700627E5D = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -320,29 +321,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		61C7318035ECFF3D2F6876E3 /* Copy Pods Resources */ = {
+		1E3A69141FF24FB7FCF9A0B1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		806388FF2F21A3381587CEE4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,14 +336,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F148F4EBE25B6D57EC12462 /* Check Pods Manifest.lock */ = {
+		3F68EA0CF8C146586DF6FA24 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,14 +351,29 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B227699F7236E194C3305B63 /* Check Pods Manifest.lock */ = {
+		51BEB421F664A7ACE8312280 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		588298870B5076F7F9781194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,14 +381,29 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B39E3C141ECD32A2B599674D /* Copy Pods Resources */ = {
+		8AF10971F79DA76CC95614AA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B0A2DB38ABD151480C7C259 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,14 +411,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4C5424B18A40E30D9B3B957 /* Check Pods Manifest.lock */ = {
+		A52AE609EEE74DB30A57B9B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,34 +426,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E315639F37D4BAF216C52E42 /* Check Pods Manifest.lock */ = {
+		F809CC432273F01C2F35E8AD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F75B29D99203FC74561FC338 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -573,7 +574,7 @@
 		};
 		4BD3A6E51CAEBF4700627E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 454E4423425EBF3927B0AD6F /* Pods-BrickRequest iOS.debug.xcconfig */;
+			baseConfigurationReference = 701B7A15F49BD4F558548685 /* Pods-BrickRequest iOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -588,12 +589,13 @@
 				PRODUCT_NAME = BrickRequest;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		4BD3A6E61CAEBF4700627E5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2701BEED53CE80836FDD59D4 /* Pods-BrickRequest iOS.release.xcconfig */;
+			baseConfigurationReference = 40151AAF06E2BE6898F213AE /* Pods-BrickRequest iOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -607,12 +609,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.BrickRequest;
 				PRODUCT_NAME = BrickRequest;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
 		4BD3A6EE1CAEBF7300627E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B09C8281DABA57F8B5A5854 /* Pods-BrickRequest OSX.debug.xcconfig */;
+			baseConfigurationReference = 37E6CBD025CC2A274312BE83 /* Pods-BrickRequest OSX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -632,7 +635,7 @@
 		};
 		4BD3A6EF1CAEBF7300627E5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4DB0CF09D5AFE7415B074E0 /* Pods-BrickRequest OSX.release.xcconfig */;
+			baseConfigurationReference = AE1384EE8FB3CEB846F65DD1 /* Pods-BrickRequest OSX.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -651,7 +654,7 @@
 		};
 		4BD3A6F91CAEBF7600627E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A72F1310520ED5B65014E91C /* Pods-BrickRequest watchOS.debug.xcconfig */;
+			baseConfigurationReference = 666AE4926A1A5715F096DA1A /* Pods-BrickRequest watchOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -672,7 +675,7 @@
 		};
 		4BD3A6FA1CAEBF7600627E5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CBD487A2D0467DCA53E424B /* Pods-BrickRequest watchOS.release.xcconfig */;
+			baseConfigurationReference = 38AF38C137AF0B9CA4544360 /* Pods-BrickRequest watchOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -692,7 +695,7 @@
 		};
 		4BD3A7041CAEBF7600627E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90B3E1D8624B627C754E7D48 /* Pods-BrickRequest tvOS.debug.xcconfig */;
+			baseConfigurationReference = 9A8C80838EABDC69446DD14F /* Pods-BrickRequest tvOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -713,7 +716,7 @@
 		};
 		4BD3A7051CAEBF7600627E5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B45745EC1AF28715738087F /* Pods-BrickRequest tvOS.release.xcconfig */;
+			baseConfigurationReference = 4003D676B839416E5A19BD72 /* Pods-BrickRequest tvOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
