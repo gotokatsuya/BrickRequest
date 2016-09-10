@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4BD3A6FD1CAEBF7600627E5D"
-               BuildableName = "BrickRequest tvOS.framework"
+               BuildableName = "BrickRequest.framework"
                BlueprintName = "BrickRequest tvOS"
                ReferencedContainer = "container:BrickRequest.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BD3A6FD1CAEBF7600627E5D"
-            BuildableName = "BrickRequest tvOS.framework"
+            BuildableName = "BrickRequest.framework"
             BlueprintName = "BrickRequest tvOS"
             ReferencedContainer = "container:BrickRequest.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BD3A6FD1CAEBF7600627E5D"
-            BuildableName = "BrickRequest tvOS.framework"
+            BuildableName = "BrickRequest.framework"
             BlueprintName = "BrickRequest tvOS"
             ReferencedContainer = "container:BrickRequest.xcodeproj">
          </BuildableReference>

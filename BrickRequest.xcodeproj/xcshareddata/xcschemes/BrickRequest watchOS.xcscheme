@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4BD3A6F21CAEBF7600627E5D"
-               BuildableName = "BrickRequest watchOS.framework"
+               BuildableName = "BrickRequest.framework"
                BlueprintName = "BrickRequest watchOS"
                ReferencedContainer = "container:BrickRequest.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BD3A6F21CAEBF7600627E5D"
-            BuildableName = "BrickRequest watchOS.framework"
+            BuildableName = "BrickRequest.framework"
             BlueprintName = "BrickRequest watchOS"
             ReferencedContainer = "container:BrickRequest.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BD3A6F21CAEBF7600627E5D"
-            BuildableName = "BrickRequest watchOS.framework"
+            BuildableName = "BrickRequest.framework"
             BlueprintName = "BrickRequest watchOS"
             ReferencedContainer = "container:BrickRequest.xcodeproj">
          </BuildableReference>
