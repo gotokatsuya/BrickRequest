@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10B571E1C186266DAC5CED3C /* Pods_BrickRequest_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8267C8893EF2C214E6F6AB75 /* Pods_BrickRequest_OSX.framework */; };
+		4B903F161D8DA1C700DB107C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B903F151D8DA1C700DB107C /* Alamofire.framework */; };
+		4B903F181D8DA1DE00DB107C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B903F171D8DA1DE00DB107C /* Alamofire.framework */; };
+		4B903F1A1D8DA1E500DB107C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B903F191D8DA1E500DB107C /* Alamofire.framework */; };
+		4B903F1C1D8DA1EB00DB107C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B903F1B1D8DA1EB00DB107C /* Alamofire.framework */; };
 		4BD3A6E01CAEBF4700627E5D /* BrickRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BD3A6EB1CAEBF7300627E5D /* BrickRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BD3A6F61CAEBF7600627E5D /* BrickRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,17 +19,16 @@
 		4BD3A70B1CAEC12F00627E5D /* BrickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */; };
 		4BD3A70C1CAEC12F00627E5D /* BrickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */; };
 		4BD3A70D1CAEC12F00627E5D /* BrickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */; };
-		583D3A2BA1949A7ABB0BA012 /* Pods_BrickRequest_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA97E2D9F9C3098544367D /* Pods_BrickRequest_iOS.framework */; };
-		AE7AC00DC3803EE43A44DB36 /* Pods_BrickRequest_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A239303195A8BA9AF423585D /* Pods_BrickRequest_watchOS.framework */; };
-		DD18FF94862609A895BBF2A3 /* Pods_BrickRequest_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD9133EA7C0176EBF27D532 /* Pods_BrickRequest_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19DA97E2D9F9C3098544367D /* Pods_BrickRequest_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DD9133EA7C0176EBF27D532 /* Pods_BrickRequest_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2701BEED53CE80836FDD59D4 /* Pods-BrickRequest iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS.release.xcconfig"; sourceTree = "<group>"; };
 		2CBD487A2D0467DCA53E424B /* Pods-BrickRequest watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		454E4423425EBF3927B0AD6F /* Pods-BrickRequest iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4B903F151D8DA1C700DB107C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		4B903F171D8DA1DE00DB107C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		4B903F191D8DA1E500DB107C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		4B903F1B1D8DA1EB00DB107C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
 		4BD3A6DC1CAEBF4700627E5D /* BrickRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrickRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3A6DF1CAEBF4700627E5D /* BrickRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrickRequest.h; sourceTree = "<group>"; };
 		4BD3A6E11CAEBF4700627E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,10 +37,8 @@
 		4BD3A7061CAEBF7600627E5D /* BrickRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrickRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3A7091CAEC12F00627E5D /* BrickRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickRequest.swift; sourceTree = "<group>"; };
 		6B09C8281DABA57F8B5A5854 /* Pods-BrickRequest OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX.debug.xcconfig"; sourceTree = "<group>"; };
-		8267C8893EF2C214E6F6AB75 /* Pods_BrickRequest_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B45745EC1AF28715738087F /* Pods-BrickRequest tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		90B3E1D8624B627C754E7D48 /* Pods-BrickRequest tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		A239303195A8BA9AF423585D /* Pods_BrickRequest_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickRequest_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72F1310520ED5B65014E91C /* Pods-BrickRequest watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C4DB0CF09D5AFE7415B074E0 /* Pods-BrickRequest OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickRequest OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				583D3A2BA1949A7ABB0BA012 /* Pods_BrickRequest_iOS.framework in Frameworks */,
+				4B903F161D8DA1C700DB107C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B571E1C186266DAC5CED3C /* Pods_BrickRequest_OSX.framework in Frameworks */,
+				4B903F181D8DA1DE00DB107C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7AC00DC3803EE43A44DB36 /* Pods_BrickRequest_watchOS.framework in Frameworks */,
+				4B903F1A1D8DA1E500DB107C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD18FF94862609A895BBF2A3 /* Pods_BrickRequest_tvOS.framework in Frameworks */,
+				4B903F1C1D8DA1EB00DB107C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,10 +113,10 @@
 		59F51B5601C02CB5D0FE52AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8267C8893EF2C214E6F6AB75 /* Pods_BrickRequest_OSX.framework */,
-				19DA97E2D9F9C3098544367D /* Pods_BrickRequest_iOS.framework */,
-				1DD9133EA7C0176EBF27D532 /* Pods_BrickRequest_tvOS.framework */,
-				A239303195A8BA9AF423585D /* Pods_BrickRequest_watchOS.framework */,
+				4B903F1B1D8DA1EB00DB107C /* Alamofire.framework */,
+				4B903F191D8DA1E500DB107C /* Alamofire.framework */,
+				4B903F171D8DA1DE00DB107C /* Alamofire.framework */,
+				4B903F151D8DA1C700DB107C /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,12 +178,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A6E41CAEBF4700627E5D /* Build configuration list for PBXNativeTarget "BrickRequest iOS" */;
 			buildPhases = (
-				B227699F7236E194C3305B63 /* Check Pods Manifest.lock */,
 				4BD3A6D71CAEBF4700627E5D /* Sources */,
 				4BD3A6D81CAEBF4700627E5D /* Frameworks */,
 				4BD3A6D91CAEBF4700627E5D /* Headers */,
-				4BD3A6DA1CAEBF4700627E5D /* Resources */,
-				F75B29D99203FC74561FC338 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,12 +195,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A6ED1CAEBF7300627E5D /* Build configuration list for PBXNativeTarget "BrickRequest OSX" */;
 			buildPhases = (
-				8F148F4EBE25B6D57EC12462 /* Check Pods Manifest.lock */,
 				4BD3A6E81CAEBF7300627E5D /* Sources */,
 				4BD3A6E91CAEBF7300627E5D /* Frameworks */,
 				4BD3A6EA1CAEBF7300627E5D /* Headers */,
-				4BD3A6EC1CAEBF7300627E5D /* Resources */,
-				61C7318035ECFF3D2F6876E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,12 +212,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A6F81CAEBF7600627E5D /* Build configuration list for PBXNativeTarget "BrickRequest watchOS" */;
 			buildPhases = (
-				E315639F37D4BAF216C52E42 /* Check Pods Manifest.lock */,
 				4BD3A6F31CAEBF7600627E5D /* Sources */,
 				4BD3A6F41CAEBF7600627E5D /* Frameworks */,
 				4BD3A6F51CAEBF7600627E5D /* Headers */,
-				4BD3A6F71CAEBF7600627E5D /* Resources */,
-				B39E3C141ECD32A2B599674D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,12 +229,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3A7031CAEBF7600627E5D /* Build configuration list for PBXNativeTarget "BrickRequest tvOS" */;
 			buildPhases = (
-				D4C5424B18A40E30D9B3B957 /* Check Pods Manifest.lock */,
 				4BD3A6FE1CAEBF7600627E5D /* Sources */,
 				4BD3A6FF1CAEBF7600627E5D /* Frameworks */,
 				4BD3A7001CAEBF7600627E5D /* Headers */,
-				4BD3A7021CAEBF7600627E5D /* Resources */,
-				806388FF2F21A3381587CEE4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +253,7 @@
 				TargetAttributes = {
 					4BD3A6DB1CAEBF4700627E5D = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -287,160 +276,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		4BD3A6DA1CAEBF4700627E5D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BD3A6EC1CAEBF7300627E5D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BD3A6F71CAEBF7600627E5D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BD3A7021CAEBF7600627E5D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		61C7318035ECFF3D2F6876E3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest OSX/Pods-BrickRequest OSX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		806388FF2F21A3381587CEE4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest tvOS/Pods-BrickRequest tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F148F4EBE25B6D57EC12462 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B227699F7236E194C3305B63 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B39E3C141ECD32A2B599674D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest watchOS/Pods-BrickRequest watchOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4C5424B18A40E30D9B3B957 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E315639F37D4BAF216C52E42 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F75B29D99203FC74561FC338 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickRequest iOS/Pods-BrickRequest iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BD3A6D71CAEBF4700627E5D /* Sources */ = {
@@ -580,6 +415,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -588,6 +427,7 @@
 				PRODUCT_NAME = BrickRequest;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -600,6 +440,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -607,6 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.BrickRequest;
 				PRODUCT_NAME = BrickRequest;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -619,6 +464,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -639,6 +488,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -658,6 +511,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -679,6 +536,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -699,6 +560,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -720,6 +585,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BrickRequest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
