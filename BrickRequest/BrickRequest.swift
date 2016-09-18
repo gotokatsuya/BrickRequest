@@ -40,10 +40,10 @@ extension RequestContextType where Self: ResponseType, Self: RequestType {
 
 public protocol RequestType {
 
-    var method: Alamofire.Method { get }
+    var method: Alamofire.HTTPMethod { get }
     var URLString: String { get }
     var manager: Alamofire.SessionManager { get }
-    func createRequest(method: Alamofire.Method, URLString: String, manager: Alamofire.SessionManager) -> Alamofire.DataRequest
+    func createRequest(method: Alamofire.HTTPMethod, URLString: String, manager: Alamofire.SessionManager) -> Alamofire.DataRequest
 }
 
 public protocol ResponseType {
